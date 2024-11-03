@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient( 97.3deg,  rgba(25,50,70,0.81) 10.7%, rgba(155,65,25,0.72) 39.5%, rgba(255,192,0,0.81) 69.7% );
+}
+h1 {
+    text-align: center;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 30px;
+}
+.grid-container  {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 500px 500px;
+    gap: 30px;
+    height: 700px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.to-do {
+    grid-area: 1/1/4/2;
+}
+.toDo-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+#select {
+    width: 50px;
+    height: 30px;
+}
+.todo-input{
+    width: 300px;
+    height: 30px;
+    border: 1 solid grey;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+}
+.todo-input::placeholder{
+    opacity: 0.5;
+    font-style: italic;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+.todo-list {
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Poppins", serif;
+}
+.todo-list li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 30px;
+    background-color: #edeef0;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px 10px; 
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/circle-check-regular.svg");  /* Replace with check icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.delete-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('/trash-solid.svg'); /* Replace with trash icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer; /* Indicate it's clickable */
+    margin-left: auto; /* Push it to the far right */
+}
+.checked .text {
+    text-decoration: line-through;
+    color: gray;
+    text-decoration-color: red;
+}
+
+
+
+
+
+
+
+
+
+.trash-button,
+.complete-button{
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+.complete-button {
+
+}
+.todo-items {
+
+}
+.priority {
+    background-color: gray;
+    grid-area: 1/2/3/3;
+}
+.priority-button{
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+.reminder {
+    background-color: grey;
+    grid-area: 3/2/4/3;
+}
+.notes {
+    background-color: white;
+    grid-area: 4/1/5/3;
+}
+.note {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    padding: 20px;
+    outline: 0;
+    border: 0;
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 200;
+}
+.grid-button {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: -5px;
+}

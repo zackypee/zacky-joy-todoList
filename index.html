@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zacky_Joy To-do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DynaPuff:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="first-section">
+        <h1>To-Do List</h1>
+       
+    </section>
+    <section class="second-section"> 
+        <div class="grid-container">
+            <div class="to-do grid">
+              <form action="">
+                <input class="todo-input" placeholder="Add your text" type="text">
+                <button  class="toDo-button" ><i class="fa-solid fa-plus"></i></button>
+                <select name="" id="select">
+                    <option value="all">All</option>
+                    <option  value="incompleted">inCompleted</option>
+                    <option  value="checked">Checked</option>
+                </select>
+              </form>
+               <div class="todo-container">
+                <ul class="todo-list">
+                
+                </ul>
+               </div>
+            </div>
+            <div class="priority grid"> 
+                <!-- <button class="grid-button">Today priority</button> -->
+                <form action="">
+                    <input type="search" id="search-input">
+                    <button class="priority-button"></button>
+                </form>
+                <div>
+                    <ul class="priority-list">
+
+                    </ul>
+                </div>
+             </div>
+            <div class="reminder grid"><button class="grid-button">Reminder</button></div>
+            <div class="notes grid">
+                <button class="grid-button">Notes</button>
+                <p contenteditable="true" class="note"></p>
+            </div>
+        </div>
+    </section>
+    <script src="/index.js"></script>
+</body>
+</html>
